@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <title>Password | Generate Passowrds</title>
+  </head>
+  <body class="bg-darkGreen">
+    <div
+      class="container mx-auto flex justify-center items-center min-h-screen w-full"
+    >
+      <!-- content -->
+      <div class="flex flex-col justify-between items-center space-y-12">
+        <div class="text-4xl font-bold text-lightGreen">
+          <h1>Password Generator</h1>
+        </div>
+
+        <div
+          class="flex flex-col justify-between items-center shadow-3xl p-6 space-y-10 mx-1"
+        >
+        <button class="py-3 px-4 rounded-xl text-white text-lg bg-gradient-to-r from-lightGreen to-blue font-semibold " id="output-btn">Generate Passwords</button>
+       <div class="flex justify-between align-center space-x-6">
+
+        <div class="flex flex-col justify-between items-center space-y-5 md:flex-row md:space-y-0 md:space-x-5">
+          <div class="flex justify-between items-center space-x-3">
+            <input class=" shadow-xl p-2 bg-lighterGreen text-textColor rounded-lg font-semibold text-center" type="text" id="password" value="..." disabled>
+           <button class="border-2 border-white" id="copy-text">copy</button>
+          </div>
+          
+          <div class="flex justify-between items-center space-x-3">
+              <input class=" shadow-xl p-2 bg-lighterGreen text-textColor rounded-lg font-semibold text-center" type="text" id="password2" value="..." disabled>
+              <button class="border-2 border-white" id="copy-text">copy</button>
+            </div>
+        </div>
+       </div>   
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
