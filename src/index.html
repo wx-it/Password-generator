@@ -20,21 +20,57 @@
         <div
           class="flex flex-col justify-between items-center shadow-3xl p-6 space-y-10 mx-1"
         >
-        <button class="py-3 px-4 rounded-xl text-white text-lg bg-gradient-to-r from-lightGreen to-blue font-semibold " id="output-btn">Generate Passwords</button>
-       <div class="flex justify-between align-center space-x-6">
+          <button
+            class="py-3 px-4 rounded-xl text-white text-lg bg-gradient-to-r from-lightGreen to-blue font-semibold"
+            id="output-btn"
+          >
+            Generate Passwords
+          </button>
 
-        <div class="flex flex-col justify-between items-center space-y-5 md:flex-row md:space-y-0 md:space-x-5">
-          <div class="flex justify-between items-center space-x-3">
-            <input class=" shadow-xl p-2 bg-lighterGreen text-textColor rounded-lg font-semibold text-center" type="text" id="password" value="..." disabled>
-           <button class="border-2 border-white" id="copy-text">copy</button>
+          <!-- features -->
+
+          <div class="flex justify-center items-center space-x-2">
+            <button
+              id="decrement"
+              class="bg-blue text-white font-semibold p-2 rounded-lg"
+            >
+              MIN
+            </button>
+            <p id="number" class="bg-lightGreen py-2 px-4 rounded-lg">0</p>
+            <button
+              id="increment"
+              class="bg-blue text-white font-semibold p-2 rounded-lg"
+            >
+              MAX
+            </button>
           </div>
-          
-          <div class="flex justify-between items-center space-x-3">
-              <input class=" shadow-xl p-2 bg-lighterGreen text-textColor rounded-lg font-semibold text-center" type="text" id="password2" value="..." disabled>
+
+          <div
+            class="flex flex-col justify-between items-center space-y-5 md:flex-row md:space-y-0 md:space-x-5"
+          >
+            <div class="flex justify-between items-center space-x-3">
+              <input
+                class="shadow-xl p-2 bg-lighterGreen text-textColor rounded-lg font-semibold text-center"
+                type="text"
+                id="password"
+                value="..."
+                readonly
+              />
               <button class="border-2 border-white" id="copy-text">copy</button>
             </div>
+
+            <div class="flex justify-between items-center space-x-3">
+              <input
+                class="shadow-xl p-2 bg-lighterGreen text-textColor rounded-lg font-semibold text-center"
+                type="text"
+                id="password2"
+                value="..."
+                readonly
+              />
+              <button class="border-2 border-white" id="copy-text">copy</button>
+            </div>
+          </div>
         </div>
-       </div>   
       </div>
     </div>
     <script src="script.js"></script>
