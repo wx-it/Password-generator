@@ -13,8 +13,8 @@ function generatePassword() {
   let chars = "0123456789abcdefghijklmnopqrstuvwxyz!@#$%^&*()ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
     let firstPassword = "";
-    let pwordL = i;
     let secondPassword = "";
+    let pwordL = i;
    
     function genFirstPassword() {
     for (let i = 1; i <= pwordL; i++){
