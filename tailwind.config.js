@@ -5,8 +5,6 @@ module.exports = {
     screens:{
       sm: '375px',
       md: '765px',
-      lg: '970px',
-      xl: '1440px'
     },
     extend: {
       colors: {
@@ -16,11 +14,27 @@ module.exports = {
         blue : '#077187',
         textColor : '#a3f7b5',
       },
-    },
-    
+
+      
       boxShadow: {
         contentShadow: '5px 5px 60px -10px rgba(0, 0, 0, 0.3)',
       }
+    },
+    
   },
   plugins: [],
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
