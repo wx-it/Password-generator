@@ -6,6 +6,8 @@ const secondPasswordInput = document.querySelector('#password2');
 const increment = document.querySelector('#increment');
 const decrement = document.querySelector('#decrement');
 const number = document.querySelector('#number');
+const copyFirstPword = document.querySelector('#copy-first-pword');
+const copySecondPword = document.querySelector('#copy-second-pword');
 
 
 
@@ -47,7 +49,6 @@ function copyFirstPassword() {
     copyText.select();
     document.execCommand("copy");  
   }
-  const copyFirstPword = document.querySelector('#copy-first-pword');
   copyFirstPword.addEventListener('click', copyFirstPassword);
 
 //copy second password
@@ -58,7 +59,6 @@ function copySecondPassword() {
     document.execCommand("copy");  
     alert(`the password ${secondPasswodInput} was copied`)
   }
-  const copySecondPword = document.querySelector('#copy-second-pword');
   copySecondPword.addEventListener('click', copySecondPassword);
 
 
