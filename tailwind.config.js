@@ -1,5 +1,5 @@
 
-/** @type object.assign(default, userConfig) */
+/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   safelist : {
