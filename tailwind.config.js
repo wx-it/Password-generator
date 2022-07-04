@@ -1,11 +1,7 @@
-/** @type {import('tailwindcss').Config} */
+
+/** @type object.assign(default, userConfig) */
 module.exports = {
   content: ["./src/**/*.{html,js}"],
-  integrations: [
-    tailwind({
-      config: { applyAstroPreset: false, applyBaseStyles: true },
-    }),
-  ],
   safelist : {
 
     colors: {
