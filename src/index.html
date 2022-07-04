@@ -13,6 +13,7 @@
     <title>Password | Generate Passwords</title>
   </head>
   <body class="bg-green-900">
+    <!-- container -->
     <div
       class="container mx-auto flex flex-col justify-center items-center h-screen w-full"
     >
@@ -22,9 +23,12 @@
           <h1>Password Generator</h1>
         </div>
 
+        <!-- passwords section -->
+
         <div
           class="flex flex-col justify-between items-center shadow-xl p-8 space-y-10 mx-1"
         >
+          <!-- Generate passwords button -->
           <button
             class="py-3 px-4 rounded-xl text-white text-lg bg-gradient-to-r from-green-500 to-blue-700 font-semibold"
             id="output-btn"
@@ -32,7 +36,7 @@
             Generate Passwords
           </button>
 
-          <!-- features -->
+          <!-- increment / decrement -->
 
           <div class="flex justify-center items-center space-x-2">
             <button
@@ -41,7 +45,11 @@
             >
               <i class="fa fa-chevron-down" aria-hidden="true"></i>
             </button>
+
+            <!-- characters limit display number -->
+
             <p id="number" class="bg-green-400 py-2 px-4 rounded-lg">0</p>
+
             <button
               id="increment"
               class="bg-blue-500 text-white font-semibold p-2 rounded-lg"
@@ -49,6 +57,8 @@
               <i class="fa fa-chevron-up" aria-hidden="true"></i>
             </button>
           </div>
+
+          <!-- password output -->
 
           <div
             class="flex flex-col justify-between items-center space-y-5 md:flex-row md:space-y-0 md:space-x-5"
@@ -102,7 +112,6 @@
         >
       </p>
     </div>
-    <script src="https://cdn.tailwindcss.com"></script>
     <script src="script.js"></script>
   </body>
 </html>

@@ -11,8 +11,40 @@ const copySecondPword = document.querySelector('#copy-second-pword');
 
 
 
+
+//increment number
+let i = 0;
+
+function incNumber() {
+    if (i < 20) {
+        i++;
+    } else if (i = 20) {
+        i = 0;
+    }
+    number.textContent = i;
+    
+}
+
+increment.addEventListener('click', incNumber);
+
+//decrement number
+
+function decNumber() {
+    if (i < 20) {
+        i--;
+    } else if (i = 20) {
+        i = 0;
+    }
+    number.textContent = i;
+}
+
+decrement.addEventListener('click', decNumber);
+
+
+
+
 function generatePassword() {
-  let chars = "0123456789abcdefghijklmnopqrstuvwxyz!@#$%^&*()ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  let charcters = "0123456789abcdefghijklmnopqrstuvwxyz!@#$%^&*()ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
     let firstPassword = "";
     let secondPassword = "";
@@ -21,8 +53,8 @@ function generatePassword() {
     function genFirstPassword() {
     for (let i = 1; i <= pwordL; i++){
 
-        let output =  Math.floor(Math.random() * chars.length);
-        firstPassword += chars.substring(output, output +1);
+        let output =  Math.floor(Math.random() * charcters.length);
+        firstPassword += charcters.substring(output, output +1);
     } 
     firstPasswordInput.value = firstPassword;
     }
@@ -35,8 +67,6 @@ function generatePassword() {
         } 
         secondPasswordInput.value = secondPassword;
         }
-    genFirstPassword();
-    genSecondPassword();
     }
 
 
@@ -64,30 +94,3 @@ function copySecondPassword() {
 
 
   
-//increment
-let i = 0;
-
-function incNumber() {
-    if (i < 20) {
-        i++;
-    } else if (i = 20) {
-        i = 0;
-    }
-    number.textContent = i;
-    
-}
-
-increment.addEventListener('click', incNumber);
-
-//decrement
-
-function decNumber() {
-    if (i < 20) {
-        i--;
-    } else if (i = 20) {
-        i = 0;
-    }
-    number.textContent = i;
-}
-
-decrement.addEventListener('click', decNumber);
